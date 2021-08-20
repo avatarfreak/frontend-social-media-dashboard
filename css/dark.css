@@ -4,6 +4,7 @@
   --clr-dark-120: hsl(228, 28%, 20%);
   --clr-dark-130: hsl(228, 34%, 66%);
   --clr-dark-140: hsl(0, 0%, 100%);
+  --toggle-dark: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
 .wrapper {
@@ -24,6 +25,14 @@
 
 .header__switch h2 {
   color: var(--clr-dark-130);
+}
+
+label.switch {
+  background: var(--toggle-dark);
+}
+
+span.slider-circle {
+  background: var(--clr-dark-120);
 }
 
 /*----------------Card Top *----------------------*/
