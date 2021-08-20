@@ -279,6 +279,9 @@ input:checked + span.slider-circle {
 }
 
 @media screen and (min-width: 1024px) {
+  .wrapper {
+    padding: 4rem;
+  }
   .header__intro h1 {
     font-size: 1.75rem;
   }
