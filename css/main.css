@@ -5,7 +5,7 @@
 
   --icon-fb: hsl(208, 92%, 53%);
   --icon-tw: hsl(203, 89%, 53%);
-  --icon-in: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
+  --icon-in: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   --icon-yt: hsl(348, 97%, 39%);
 
   /* Toggle theme */
@@ -29,7 +29,154 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-size: var(--fs-size-sm);
+  text-align: center;
+  font-weight: var(--fw-weight-regular);
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+.wrapper {
+  padding: 2.5rem 1.5rem;
+}
 
+/*-------------Header---------------------*/
+.header__intro {
+  text-align: left;
+  position: relative;
+}
+.header__intro::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(1.5rem);
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid;
+}
+
+.header__intro h1 {
+  font-size: var(--fs-size-md);
+  font-weight: var(--fw-weight-bold);
+  margin: 0.4rem 0;
+}
+
+.header__intro p {
+  font-size: var(--fs-size-sm);
+  font-weight: var(--fw-weight-bold);
+}
+
+/*------------Theme Switcher Section--------*/
+.header__switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.header__switch h2 {
+  font-size: var(--fs-size-sm);
+  font-weight: var(--fw-weight-bold);
+}
+/*----------------Card Top *----------------------*/
+.card-top {
+  margin-top: 1.5rem;
+}
+.card {
+  padding: 1.5rem 0;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+}
+.card-fb,
+.card-tw,
+.card-yt,
+.card-in {
+  border-top: 5px solid;
+}
+
+.card-fb {
+  border-color: var(--icon-fb);
+}
+
+.card-tw {
+  border-color: var(--icon-tw);
+}
+.card-in {
+  position: relative;
+  border: transparent;
+}
+.card-in::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-image: var(--icon-in);
+}
+.card-yt {
+  border-color: var(--icon-yt);
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.card__user {
+  font-size: var(--fs-size-2xs);
+  font-weight: var(--fw-weight-bold);
+}
+
+.card__body {
+  margin-top: 1.5rem;
+}
+
+.card__text {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+.card h3 {
+  font-size: var(--fs-size-lg);
+  font-weight: var(--fw-weight-bold);
+}
+
+.card__text {
+  font-size: var(--fs-size-xs);
+  letter-spacing: 4.45px;
+}
+
+.card__footer {
+  margin-top: 1.5rem;
+}
+
+.card__footer p {
+  font-size: var(--fs-size-xs);
+  font-weight: var(--fw-weight-bold);
+}
+
+.card p.up {
+  color: var(--clr-primary-100);
+}
+
+.card p.down {
+  color: var(--clr-primary-110);
+}
 .attribution {
   font-size: 11px;
   text-align: center;
