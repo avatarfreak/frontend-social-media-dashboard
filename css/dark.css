@@ -52,7 +52,7 @@ span.slider-circle {
 
 /*---------------Container Section Heading------------*/
 .container h2 {
-  color: var(--clr-dark-130);
+  color: var(--clr-dark-140);
 }
 
 /*-------------------Card Bottom-----------------------------*/
@@ -61,4 +61,11 @@ span.slider-circle {
 }
 .card__fig {
   color: var(--clr-dark-140);
+}
+
+footer {
+  color: var(--clr-dark-140);
+}
+.attribution a {
+  color: var(--clr-dark-130);
 }

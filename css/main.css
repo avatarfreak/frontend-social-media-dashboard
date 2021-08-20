@@ -38,6 +38,9 @@ body {
   text-align: center;
   font-weight: var(--fw-weight-regular);
 }
+a {
+  text-decoration: none;
+}
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -243,6 +246,7 @@ input:checked + span.slider-circle {
   font-size: var(--fs-size-2xs);
   font-weight: var(--fw-weight-bold);
 }
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -250,4 +254,18 @@ input:checked + span.slider-circle {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 768px) {
+  .card-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .card-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 }
