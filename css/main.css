@@ -12,12 +12,12 @@
   --toggle-dark: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
   --toggle-light: hsl(230, 22%, 74%);
 
-  --fs-size-2xs: 12px;
-  --fs-size-xs: 13px;
-  --fs-size-sm: 14px;
-  --fs-size-md: 22px;
-  --fs-size-lg: 32px;
-  --fs-size-xl: 54px;
+  --fs-size-2xs: 0.75rem;
+  --fs-size-xs: 0.8125rem;
+  --fs-size-sm: 0.875rem;
+  --fs-size-md: 1.375rem;
+  --fs-size-lg: 2rem;
+  --fs-size-xl: 3.375rem;
 
   --fw-weight-regular: 400;
   --fw-weight-bold: 700;
@@ -121,7 +121,7 @@ label.switch {
 }
 
 span.slider-circle {
-  --cir-size: 18px;
+  --cir-size: 1.125rem;
   display: block;
   width: var(--cir-size);
   height: var(--cir-size);
