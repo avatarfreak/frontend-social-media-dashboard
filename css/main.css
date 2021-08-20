@@ -53,6 +53,9 @@ a {
 .wrapper {
   padding: 2.5rem 1.5rem;
   transition: 0.5s;
+  max-width: 1920px;
+  margin: auto;
+  min-height: 100vh;
 }
 
 /*-------------Header---------------------*/
@@ -256,7 +259,8 @@ input:checked + span.slider-circle {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 768px) {
+/*--------------Media Query----------------*/
+@media screen and (min-width: 600px) {
   .card-top {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -266,6 +270,23 @@ input:checked + span.slider-circle {
   .card-bottom {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header__intro h1 {
+    font-size: 1.75rem;
+  }
+  .card-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .card-bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
   }
 }
