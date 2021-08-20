@@ -49,3 +49,16 @@ span.slider-circle {
 .card__text {
   color: var(--clr-dark-130);
 }
+
+/*---------------Container Section Heading------------*/
+.container h2 {
+  color: var(--clr-dark-130);
+}
+
+/*-------------------Card Bottom-----------------------------*/
+.card__detail {
+  color: var(--clr-dark-130);
+}
+.card__fig {
+  color: var(--clr-dark-140);
+}

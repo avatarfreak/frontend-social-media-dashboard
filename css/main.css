@@ -16,7 +16,8 @@
   --fs-size-xs: 13px;
   --fs-size-sm: 14px;
   --fs-size-md: 22px;
-  --fs-size-lg: 54px;
+  --fs-size-lg: 32px;
+  --fs-size-xl: 54px;
 
   --fw-weight-regular: 400;
   --fw-weight-bold: 700;
@@ -105,6 +106,7 @@ label.switch {
   align-items: center;
   padding: 0.25rem;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 span.slider-circle {
@@ -126,7 +128,7 @@ input:checked + span.slider-circle {
   margin-top: 3rem;
 }
 .card {
-  padding: 1.5rem 0;
+  padding: 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 5px;
 }
@@ -184,7 +186,7 @@ input:checked + span.slider-circle {
   text-transform: uppercase;
 }
 .card h3 {
-  font-size: var(--fs-size-lg);
+  font-size: var(--fs-size-xl);
   font-weight: var(--fw-weight-bold);
 }
 
@@ -208,6 +210,38 @@ input:checked + span.slider-circle {
 
 .card p.down {
   color: var(--clr-primary-110);
+}
+
+/*---------------Container Section Heading------------*/
+.container h2 {
+  text-align: left;
+  font-size: var(--fs-size-md);
+  letter-spacing: 1.17px;
+  padding: 1.5rem 0;
+}
+
+/*----------------------Card Bottom ---------------------------*/
+.card__stat,
+.card__score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__score {
+  margin-top: 1.5rem;
+}
+
+.card__detail {
+  font-size: var(--fs-size-sm);
+  font-weight: var(--fw-weight-bold);
+}
+.card__fig {
+  font-size: var(--fs-size-lg);
+  font-weight: var(--fw-weight-bold);
+}
+.card__vote {
+  font-size: var(--fs-size-2xs);
+  font-weight: var(--fw-weight-bold);
 }
 .attribution {
   font-size: 11px;
